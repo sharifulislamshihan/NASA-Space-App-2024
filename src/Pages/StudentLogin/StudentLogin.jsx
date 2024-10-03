@@ -30,7 +30,7 @@ const StudentLogin = () => {
             <div className="bg-[#EFE6D6] w-5/6 md:h-3/5 rounded-3xl grid grid-cols-2 gap-5">
 
                     {/* image */}
-                    <div>
+                    <div className="flex justify-center items-center">
                         <img
                             className="w-60"
                             src="/student_login/School_girl.png"
