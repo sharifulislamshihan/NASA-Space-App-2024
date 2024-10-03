@@ -7,7 +7,12 @@ const AboutPace = () => {
 
     const [currentPage, setCurrentPage] = useState(0);
     const nextPage = () => {
-        setCurrentPage((prevPage) => (prevPage + 1) % 3);
+        if (currentPage === 2) {
+            navigate('/new-page');
+        }
+        else {
+            setCurrentPage((prevPage) => (prevPage + 1) % 3);
+        }
     };
 
     const handleBack = () => {
@@ -57,42 +62,58 @@ const AboutPace = () => {
                         alt="" />
 
                     <div className="absolute inset-0 flex items-center justify-center mx-40 lg:mx-48">
+
+
+                        {/* 1st page */}
                         {currentPage === 0 && (
-                            <h3 className="font-arima text-black">
+                            <h3 className="font-arima text-black text-xl font-semibold">
                                 PACE is like a super-smart space Satellite! 🌍✨<br />
                                 PACE stands for <span className="font-semibold">
                                     Plankton, Aerosol, Cloud, ocean Ecosystem
                                 </span>, and it went to space in 2024 to protect our planet’s oceans and air. But why should you care?
                             </h3>
                         )}
+
+                        {/* 2nd page */}
                         {currentPage === 1 && (
-                            <div className="text-center">
+                            <div className="grid grid-cols-2 gap-2">
                                 <div>
-                                    <p className="text-black">
+                                    <p className="text-black text-xl font-arima mt-10 font-semibold">
                                         Think of the ocean as a home for all the fish and sea creatures. PACE helps scientists check if the ocean is clean and if tiny plants called <span className="text-green-600">plankton (which help animals breathe)</span> are healthy.
                                     </p>
                                 </div>
 
-                                <div className=" rounded-lg ">
-                                    <img src="path-to-ocean-image.jpg" alt="Ocean Scene" className="w-full h-auto rounded-lg" />
+                                <div className=" my-auto rounded-lg ">
+                                    <img src="/about_pace/page2.png " alt="Ocean Scene" className="w-full h-auto rounded-lg" />
                                 </div>
 
                             </div>
+
                         )}
+
+
+                        {/* 3rd page */}
                         {currentPage === 2 && (
-                            <div className="text-center">
-                                <div className="bg-blue-200 rounded-lg p-4 mb-2">
-                                    <img src="path-to-ocean-image.jpg" alt="Ocean Scene" className="w-full h-auto rounded-lg" />
+                            <div className="grid grid-cols-2 gap-2">
+                                <div>
+                                    <p className="text-black text-sm lg:text-xl font-arima mt-10 font-semibold">
+                                        Now, let’s think about the air we breathe. Sometimes, there are tiny things floating in the air like dust or smoke, called <span className="text-blue-500">aerosols</span>. These can change the weather, and some of them can make it harder for us to breathe. PACE watches over these tiny particles, helping us figure out if our air is clean.
+                                    </p>
                                 </div>
-                                <p className="text-white bg-black bg-opacity-50 p-4 rounded-lg">
-                                    p3
-                                </p>
+
+
+                                <div className="my-auto rounded-lg">
+                                    <img src="/about_pace/page3.png" alt="Ocean Scene" className="w-full h-auto rounded-lg" />
+                                </div>
+
+
                             </div>
+
                         )}
+                        <button onClick={nextPage} className="absolute bottom-10 lg:bottom-14 right-10">
+                            <img src="/about_pace/forward-circle.png" alt="Next" className="w-10 h-10" />
+                        </button>
                     </div>
-                    <button onClick={nextPage} className="absolute bottom-5 right-5">
-                        <img src="path-to-next-button-image.jpg" alt="Next" className="w-10 h-10" />
-                    </button>
                 </div>
             </div>
         </div>
