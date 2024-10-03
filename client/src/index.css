@@ -1,0 +1,12 @@
+/* Freckle Face font */
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+
+
+/* arima font */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
