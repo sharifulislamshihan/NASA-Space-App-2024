@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const Role = () => {
     return (
@@ -19,17 +20,19 @@ const Role = () => {
                 </div>
 
                 {/* Student Role */}
-                <div>
-                    <button className="bg-[#EFE6D6] rounded-lg shadow-lg p-6 w-68 md:h-96 mx-auto">
-                        <div className="bg-[url('/Role/Robot.png')] bg-center bg-contain bg-no-repeat relative w-64 h-64 mx-auto">
-                            {/* Teacher Image */}
-                            <img src="/Role/School_girl.png" alt="Teacher" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 mb-7 " />
-                        </div>
-                        <h3 className=" font-bold font-arima text-2xl mt-5 text-[#5A8E93] outline-4">
-                            Log in as Student
-                        </h3>
-                    </button>
-                </div>
+                <Link to='/studentLogin'>
+                    <div>
+                        <button className="bg-[#EFE6D6] rounded-lg shadow-lg p-6 w-68 md:h-96 mx-auto">
+                            <div className="bg-[url('/Role/Robot.png')] bg-center bg-contain bg-no-repeat relative w-64 h-64 mx-auto">
+                                {/* Teacher Image */}
+                                <img src="/Role/School_girl.png" alt="Teacher" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 mb-7 " />
+                            </div>
+                            <h3 className=" font-bold font-arima text-2xl mt-5 text-[#5A8E93] outline-4">
+                                Log in as Student
+                            </h3>
+                        </button>
+                    </div>
+                </Link>
 
 
             </div>
