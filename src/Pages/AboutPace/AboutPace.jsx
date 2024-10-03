@@ -5,20 +5,20 @@ const AboutPace = () => {
 
     const navigate = useNavigate();
 
+    const handleBack = () => {
+        navigate(-1);
+    }
+
+
     const [currentPage, setCurrentPage] = useState(0);
     const nextPage = () => {
         if (currentPage === 2) {
-            navigate('/new-page');
+            navigate('/aboutPace2');
         }
         else {
             setCurrentPage((prevPage) => (prevPage + 1) % 3);
         }
     };
-
-    const handleBack = () => {
-        navigate(-1);
-    }
-
 
     return (
         <div className="bg-[url('/about_pace/about_pace.png')] bg-cover bg-center h-screen flex justify-center">
