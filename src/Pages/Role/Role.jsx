@@ -8,7 +8,7 @@ const Role = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-10">
                 {/* Teacher Role */}
                 <div>
-                    <button className="bg-[#EFE6D6] rounded-lg shadow-lg p-6 w-68 md:h-96">
+                    <button className="bg-[#EFE6D6] rounded-3xl shadow-lg p-6 w-68 md:h-96">
                         <div className="bg-[url('/Role/Robot.png')] bg-center bg-contain bg-no-repeat relative w-64 h-64 flex justify-center">
                             {/* Teacher Image */}
                             <img src="/Role/Teacher.png" alt="Teacher" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-28 mb-7 " />
@@ -22,7 +22,7 @@ const Role = () => {
                 {/* Student Role */}
                 <Link to='/studentLogin'>
                     <div>
-                        <button className="bg-[#EFE6D6] rounded-lg shadow-lg p-6 w-68 md:h-96 mx-auto">
+                        <button className="bg-[#EFE6D6] rounded-3xl shadow-lg p-6 w-68 md:h-96 mx-auto">
                             <div className="bg-[url('/Role/Robot.png')] bg-center bg-contain bg-no-repeat relative w-64 h-64 mx-auto">
                                 {/* Teacher Image */}
                                 <img src="/Role/School_girl.png" alt="Teacher" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 mb-7 " />
