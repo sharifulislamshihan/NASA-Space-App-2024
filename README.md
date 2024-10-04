@@ -1,8 +1,8 @@
 # PACE Venture
-An Educational App for Exploring NASA's PACE Satellite
+An Educational App for Exploring NASA's PACE Satellite Data in a fun and interactive way.
 ## Overview
 
-**PACE Venture** is a React.js web app designed to help students and teachers explore NASA’s PACE satellite data in a fun, interactive, and educational manner. With features tailored to various grade levels, it offers an immersive learning experience through storytelling, AR visualizations, and interactive games. This tool transforms the classroom environment, making space exploration and scientific data more accessible and engaging for students.
+**PACE Venture** is a web app designed to help students and teachers explore NASA’s PACE satellite data in a fun, interactive, and educational manner. With features tailored to various grade levels, it offers an immersive learning experience through storytelling, AR visualizations, and interactive games. This tool transforms the classroom environment, making space exploration and scientific data more accessible and engaging for students.
 
 ### Key Features
 
@@ -20,6 +20,7 @@ An Educational App for Exploring NASA's PACE Satellite
 - **Role Choice Page**: ![WhatsApp Image 2024-10-04 at 5 18 03 PM](https://github.com/user-attachments/assets/6df1853b-b92d-407c-93be-d1d33ed5b637)
 - **AR View Page**: ![8](https://github.com/user-attachments/assets/a10abc4b-8071-49ad-9010-c4cf54cf6d04)
 - **AR View Page**: ![Dashboard](https://github.com/user-attachments/assets/aea8b7d4-6854-46c4-a6a8-509a2c8ed4df)
+- **Loading More.....**
 
 ### Built With
 
@@ -37,9 +38,9 @@ An Educational App for Exploring NASA's PACE Satellite
    cd PACE-Venture
 ## Why It’s Impactful for the Classroom
 
-**PACE Venture** transforms science education into an interactive adventure. With real NASA data and hands-on activities, it brings a deeper understanding of space exploration and ocean science to students. The app:
+**PACE Venture** transforms science education into an interactive adventure. With real NASA data and hands-on activities, it brings a deeper understanding of PACE Data exploration and ocean science to students. The app:
 - Enhances engagement through interactive games, AR visualizations, and real-time data.
-- Helps students develop literacy, data analysis, and critical thinking skills.
+- Helps students develop ocean literacy, data analysis, and critical thinking skills.
 - Provides teachers with tools to track progress and integrate cutting-edge space research into their curriculum.
 - Encourages STEM learning in an accessible and exciting way.
 
